@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/tmp.k7ih6VVzXi
+CMAKE_SOURCE_DIR = /code/min-web
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/tmp.k7ih6VVzXi/cmake-build-debug
+CMAKE_BINARY_DIR = /code/min-web/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/min_web.dir/depend.make
@@ -57,34 +57,110 @@ include CMakeFiles/min_web.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/min_web.dir/flags.make
 
-CMakeFiles/min_web.dir/main.cpp.o: CMakeFiles/min_web.dir/flags.make
-CMakeFiles/min_web.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.k7ih6VVzXi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/min_web.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/min_web.dir/main.cpp.o -c /tmp/tmp.k7ih6VVzXi/main.cpp
+CMakeFiles/min_web.dir/src/core/config.cpp.o: CMakeFiles/min_web.dir/flags.make
+CMakeFiles/min_web.dir/src/core/config.cpp.o: ../src/core/config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code/min-web/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/min_web.dir/src/core/config.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/min_web.dir/src/core/config.cpp.o -c /code/min-web/src/core/config.cpp
 
-CMakeFiles/min_web.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/min_web.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.k7ih6VVzXi/main.cpp > CMakeFiles/min_web.dir/main.cpp.i
+CMakeFiles/min_web.dir/src/core/config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/min_web.dir/src/core/config.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code/min-web/src/core/config.cpp > CMakeFiles/min_web.dir/src/core/config.cpp.i
 
-CMakeFiles/min_web.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/min_web.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.k7ih6VVzXi/main.cpp -o CMakeFiles/min_web.dir/main.cpp.s
+CMakeFiles/min_web.dir/src/core/config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/min_web.dir/src/core/config.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code/min-web/src/core/config.cpp -o CMakeFiles/min_web.dir/src/core/config.cpp.s
+
+CMakeFiles/min_web.dir/src/log/log.cpp.o: CMakeFiles/min_web.dir/flags.make
+CMakeFiles/min_web.dir/src/log/log.cpp.o: ../src/log/log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code/min-web/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/min_web.dir/src/log/log.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/min_web.dir/src/log/log.cpp.o -c /code/min-web/src/log/log.cpp
+
+CMakeFiles/min_web.dir/src/log/log.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/min_web.dir/src/log/log.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code/min-web/src/log/log.cpp > CMakeFiles/min_web.dir/src/log/log.cpp.i
+
+CMakeFiles/min_web.dir/src/log/log.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/min_web.dir/src/log/log.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code/min-web/src/log/log.cpp -o CMakeFiles/min_web.dir/src/log/log.cpp.s
+
+CMakeFiles/min_web.dir/src/log/block_queue.cpp.o: CMakeFiles/min_web.dir/flags.make
+CMakeFiles/min_web.dir/src/log/block_queue.cpp.o: ../src/log/block_queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code/min-web/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/min_web.dir/src/log/block_queue.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/min_web.dir/src/log/block_queue.cpp.o -c /code/min-web/src/log/block_queue.cpp
+
+CMakeFiles/min_web.dir/src/log/block_queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/min_web.dir/src/log/block_queue.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code/min-web/src/log/block_queue.cpp > CMakeFiles/min_web.dir/src/log/block_queue.cpp.i
+
+CMakeFiles/min_web.dir/src/log/block_queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/min_web.dir/src/log/block_queue.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code/min-web/src/log/block_queue.cpp -o CMakeFiles/min_web.dir/src/log/block_queue.cpp.s
+
+CMakeFiles/min_web.dir/src/locker/locker.cpp.o: CMakeFiles/min_web.dir/flags.make
+CMakeFiles/min_web.dir/src/locker/locker.cpp.o: ../src/locker/locker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code/min-web/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/min_web.dir/src/locker/locker.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/min_web.dir/src/locker/locker.cpp.o -c /code/min-web/src/locker/locker.cpp
+
+CMakeFiles/min_web.dir/src/locker/locker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/min_web.dir/src/locker/locker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code/min-web/src/locker/locker.cpp > CMakeFiles/min_web.dir/src/locker/locker.cpp.i
+
+CMakeFiles/min_web.dir/src/locker/locker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/min_web.dir/src/locker/locker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code/min-web/src/locker/locker.cpp -o CMakeFiles/min_web.dir/src/locker/locker.cpp.s
+
+CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.o: CMakeFiles/min_web.dir/flags.make
+CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.o: ../src/pool/thread_pool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code/min-web/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.o -c /code/min-web/src/pool/thread_pool.cpp
+
+CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code/min-web/src/pool/thread_pool.cpp > CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.i
+
+CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code/min-web/src/pool/thread_pool.cpp -o CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.s
+
+CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.o: CMakeFiles/min_web.dir/flags.make
+CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.o: ../src/timer/lst_timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code/min-web/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.o -c /code/min-web/src/timer/lst_timer.cpp
+
+CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code/min-web/src/timer/lst_timer.cpp > CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.i
+
+CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code/min-web/src/timer/lst_timer.cpp -o CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.s
 
 # Object files for target min_web
 min_web_OBJECTS = \
-"CMakeFiles/min_web.dir/main.cpp.o"
+"CMakeFiles/min_web.dir/src/core/config.cpp.o" \
+"CMakeFiles/min_web.dir/src/log/log.cpp.o" \
+"CMakeFiles/min_web.dir/src/log/block_queue.cpp.o" \
+"CMakeFiles/min_web.dir/src/locker/locker.cpp.o" \
+"CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.o" \
+"CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.o"
 
 # External object files for target min_web
 min_web_EXTERNAL_OBJECTS =
 
-min_web: CMakeFiles/min_web.dir/main.cpp.o
-min_web: CMakeFiles/min_web.dir/build.make
-min_web: CMakeFiles/min_web.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.k7ih6VVzXi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable min_web"
+libmin_web.a: CMakeFiles/min_web.dir/src/core/config.cpp.o
+libmin_web.a: CMakeFiles/min_web.dir/src/log/log.cpp.o
+libmin_web.a: CMakeFiles/min_web.dir/src/log/block_queue.cpp.o
+libmin_web.a: CMakeFiles/min_web.dir/src/locker/locker.cpp.o
+libmin_web.a: CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.o
+libmin_web.a: CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.o
+libmin_web.a: CMakeFiles/min_web.dir/build.make
+libmin_web.a: CMakeFiles/min_web.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/code/min-web/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libmin_web.a"
+	$(CMAKE_COMMAND) -P CMakeFiles/min_web.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/min_web.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/min_web.dir/build: min_web
+CMakeFiles/min_web.dir/build: libmin_web.a
 
 .PHONY : CMakeFiles/min_web.dir/build
 
@@ -93,6 +169,6 @@ CMakeFiles/min_web.dir/clean:
 .PHONY : CMakeFiles/min_web.dir/clean
 
 CMakeFiles/min_web.dir/depend:
-	cd /tmp/tmp.k7ih6VVzXi/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/tmp.k7ih6VVzXi /tmp/tmp.k7ih6VVzXi /tmp/tmp.k7ih6VVzXi/cmake-build-debug /tmp/tmp.k7ih6VVzXi/cmake-build-debug /tmp/tmp.k7ih6VVzXi/cmake-build-debug/CMakeFiles/min_web.dir/DependInfo.cmake --color=$(COLOR)
+	cd /code/min-web/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /code/min-web /code/min-web /code/min-web/cmake-build-debug /code/min-web/cmake-build-debug /code/min-web/cmake-build-debug/CMakeFiles/min_web.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/min_web.dir/depend
 

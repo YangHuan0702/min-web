@@ -8,40 +8,86 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/tmp/tmp.k7ih6VVzXi/cmake-build-debug"/>
+				<Option working_dir="/code/min-web/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/tmp/tmp.k7ih6VVzXi/cmake-build-debug"/>
+				<Option working_dir="/code/min-web/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/tmp/tmp.k7ih6VVzXi/cmake-build-debug"/>
+				<Option working_dir="/code/min-web/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="min_app">
+				<Option output="/code/min-web/cmake-build-debug/min_app" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/code/min-web/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 min_app"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="min_app/fast">
+				<Option output="/code/min-web/cmake-build-debug/min_app" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/code/min-web/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 min_app/fast"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="min_web">
-				<Option output="/tmp/tmp.k7ih6VVzXi/cmake-build-debug/min_web" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.k7ih6VVzXi/cmake-build-debug"/>
+				<Option output="/code/min-web/cmake-build-debug/libmin_web.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/code/min-web/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
@@ -54,17 +100,17 @@
 					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 min_web"/>
-					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 min_web"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="min_web/fast">
-				<Option output="/tmp/tmp.k7ih6VVzXi/cmake-build-debug/min_web" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.k7ih6VVzXi/cmake-build-debug"/>
+				<Option output="/code/min-web/cmake-build-debug/libmin_web.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/code/min-web/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
@@ -77,17 +123,50 @@
 					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 min_web/fast"/>
-					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.k7ih6VVzXi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 min_web/fast"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/code/min-web/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/tmp/tmp.k7ih6VVzXi/main.cpp">
+		<Unit filename="/code/min-web/src/core/config.cpp">
 			<Option target="min_web"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.k7ih6VVzXi/CMakeLists.txt">
+		<Unit filename="/code/min-web/src/core/config.h">
+			<Option target="min_web"/>
+		</Unit>
+		<Unit filename="/code/min-web/src/locker/locker.cpp">
+			<Option target="min_web"/>
+		</Unit>
+		<Unit filename="/code/min-web/src/locker/locker.h">
+			<Option target="min_web"/>
+		</Unit>
+		<Unit filename="/code/min-web/src/log/block_queue.cpp">
+			<Option target="min_web"/>
+		</Unit>
+		<Unit filename="/code/min-web/src/log/log.cpp">
+			<Option target="min_web"/>
+		</Unit>
+		<Unit filename="/code/min-web/src/log/log.h">
+			<Option target="min_web"/>
+		</Unit>
+		<Unit filename="/code/min-web/src/main.cpp">
+			<Option target="min_app"/>
+		</Unit>
+		<Unit filename="/code/min-web/src/pool/thread_pool.cpp">
+			<Option target="min_web"/>
+		</Unit>
+		<Unit filename="/code/min-web/src/pool/thread_pool.h">
+			<Option target="min_web"/>
+		</Unit>
+		<Unit filename="/code/min-web/src/timer/lst_timer.cpp">
+			<Option target="min_web"/>
+		</Unit>
+		<Unit filename="/code/min-web/src/timer/lst_timer.h">
+			<Option target="min_web"/>
+		</Unit>
+		<Unit filename="/code/min-web/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

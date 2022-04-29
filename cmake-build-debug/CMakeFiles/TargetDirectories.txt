@@ -1,3 +1,4 @@
-/tmp/tmp.k7ih6VVzXi/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/tmp/tmp.k7ih6VVzXi/cmake-build-debug/CMakeFiles/edit_cache.dir
-/tmp/tmp.k7ih6VVzXi/cmake-build-debug/CMakeFiles/min_web.dir
+/code/min-web/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/code/min-web/cmake-build-debug/CMakeFiles/edit_cache.dir
+/code/min-web/cmake-build-debug/CMakeFiles/min_app.dir
+/code/min-web/cmake-build-debug/CMakeFiles/min_web.dir

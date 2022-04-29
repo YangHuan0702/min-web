@@ -1,1 +1,2 @@
-/usr/bin/c++  -g   CMakeFiles/min_web.dir/main.cpp.o  -o min_web 
+/usr/bin/ar qc libmin_web.a  CMakeFiles/min_web.dir/src/core/config.cpp.o CMakeFiles/min_web.dir/src/log/log.cpp.o CMakeFiles/min_web.dir/src/log/block_queue.cpp.o CMakeFiles/min_web.dir/src/locker/locker.cpp.o CMakeFiles/min_web.dir/src/pool/thread_pool.cpp.o CMakeFiles/min_web.dir/src/timer/lst_timer.cpp.o
+/usr/bin/ranlib libmin_web.a
