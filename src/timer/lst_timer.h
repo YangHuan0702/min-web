@@ -7,6 +7,14 @@
 
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <time.h>
+#include <fcntl.h>
+#include <sys/epoll.h>
+#include <cerrno>
+#include <unistd.h>
+#include <csignal>
+#include <cstring>
+#include <cassert>
 
 namespace halosky { namespace timer {
 class util_timer;

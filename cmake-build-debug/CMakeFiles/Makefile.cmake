@@ -48,6 +48,4 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/min_app.dir/DependInfo.cmake"
-  "CMakeFiles/min_web.dir/DependInfo.cmake"
   )

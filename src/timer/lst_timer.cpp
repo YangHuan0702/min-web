@@ -1,7 +1,6 @@
 //
 // Created by huan.yang on 2022-04-29.
 //
-
 #include "lst_timer.h"
 
 namespace halosky {
@@ -87,5 +86,137 @@ namespace halosky {
             delete timer;
         }
 
+        void sort_timer_lst::tick() {
+            if (!head) {
+                return;
+            }
+
+            time_t cur = time(nullptr);
+            util_timer *tmp = head;
+            while (tmp) {
+                if (cur < tmp->expire) {
+                    break;
+                }
+                tmp->cb_func(tmp->user_data);
+                head = tmp->next;
+                if (head) {
+                    head->prev = nullptr;
+                }
+                delete tmp;
+                tmp = head;
+            }
+        }
+
+
+        void sort_timer_lst::add_timer(util_timer *timer, util_timer *lst_head)
+        {
+            util_timer *prev = lst_head;
+            util_timer *tmp = prev->next;
+            while (tmp)
+            {
+                if (timer->expire < tmp->expire)
+                {
+                    prev->next = timer;
+                    timer->next = tmp;
+                    tmp->prev = timer;
+                    timer->prev = prev;
+                    break;
+                }
+                prev = tmp;
+                tmp = tmp->next;
+            }
+            if (!tmp)
+            {
+                prev->next = timer;
+                timer->prev = prev;
+                timer->next = NULL;
+                tail = timer;
+            }
+        }
+
+
+
+        void util::init(int timeslot)
+        {
+            m_time_slot = timeslot;
+        }
+
+
+        //对文件描述符设置非阻塞
+        int util::set_non_blocking(int fd)
+        {
+            int old_option = fcntl(fd, F_GETFL);
+            int new_option = old_option | O_NONBLOCK;
+            fcntl(fd, F_SETFL, new_option);
+            return old_option;
+        }
+
+        //将内核事件表注册读事件，ET模式，选择开启EPOLLONESHOT
+        void util::addfd(int epollfd, int fd, bool one_shot, int TRIGMode)
+        {
+            epoll_event event;
+            event.data.fd = fd;
+
+            if (1 == TRIGMode)
+                event.events = EPOLLIN | EPOLLET | EPOLLRDHUP;
+            else
+                event.events = EPOLLIN | EPOLLRDHUP;
+
+            if (one_shot)
+                event.events |= EPOLLONESHOT;
+            epoll_ctl(epollfd, EPOLL_CTL_ADD, fd, &event);
+            set_non_blocking(fd);
+        }
+
+
+        //信号处理函数
+        void util::sig_handler(int sig)
+        {
+            //为保证函数的可重入性，保留原来的errno
+            int save_errno = errno;
+            int msg = sig;
+            send(u_pipefd[1], (char *)&msg, 1, 0);
+            errno = save_errno;
+        }
+
+
+
+        //设置信号函数
+        void util::addsig(int sig, void(handler)(int), bool restart)
+        {
+            struct sigaction sa;
+            memset(&sa, '\0', sizeof(sa));
+            sa.sa_handler = handler;
+            if (restart)
+                sa.sa_flags |= SA_RESTART;
+            sigfillset(&sa.sa_mask);
+            assert(sigaction(sig, &sa, NULL) != -1);
+        }
+
+        //定时处理任务，重新定时以不断触发SIGALRM信号
+        void util::timer_handler()
+        {
+            m_timer_lst.tick();
+            alarm(m_time_slot);
+        }
+
+        void util::show_error(int connfd, const char *info)
+        {
+            send(connfd, info, strlen(info), 0);
+            close(connfd);
+        }
+
+        int *util::u_pipefd = 0;
+        int util::u_epollfd = 0;
+
+        class util;
+        void cb_func(client_data *user_data)
+        {
+            epoll_ctl(util::u_epollfd, EPOLL_CTL_DEL, user_data->sockfd, 0);
+            assert(user_data);
+            close(user_data->sockfd);
+            http_conn::m_user_count--;
+        }
     }
+
 }

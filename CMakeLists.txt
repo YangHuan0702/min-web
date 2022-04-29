@@ -15,6 +15,8 @@ add_library(min_web
         src/pool/thread_pool.cpp
         src/timer/lst_timer.cpp
         src/timer/lst_timer.h
+        src/http/http_conn.cpp
+        src/http/http_conn.h
         )
 
 add_executable(min_app src/main.cpp)

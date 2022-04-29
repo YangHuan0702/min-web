@@ -2,7 +2,7 @@
 // Created by huan.yang on 2022-04-28.
 //
 
-#ifndef MIN_WEB_LOCKER_H
+    #ifndef MIN_WEB_LOCKER_H
 #define MIN_WEB_LOCKER_H
 
 #include <semaphore.h>
